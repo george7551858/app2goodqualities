@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var abilities, questions;
 
-    fetch('http://localhost:3000/abilities')
+    fetch('https://my-json-server.typicode.com/george7551858/app2goodqualities/abilities')
         .then(function(response) {
             return response.json();
         })
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
         });
 
-    fetch('http://localhost:3000/questions')
+    fetch('https://my-json-server.typicode.com/george7551858/app2goodqualities/questions')
         .then(function(response) {
             return response.json();
         })
