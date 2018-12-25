@@ -1,185 +1,266 @@
 {
     "abilities": [
         {
-            "id" : 10,
-            "name" : "Idea Sharing",
-            "excellent" : "",
+            "id": 10,
+            "name": "Idea Sharing",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 11,
-            "name" : "Side project",
-            "excellent" : "",
+            "id": 11,
+            "name": "Side project",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 1,
-            "name" : "Team Work",
-            "excellent" : "",
+            "id": 1,
+            "name": "Team Work",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 2,
-            "name" : "Passion about Quality of Work",
-            "excellent" : "",
+            "id": 2,
+            "name": "Passion about Quality of Work",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 3,
-            "name" : "Extra Mile",
-            "excellent" : "",
+            "id": 3,
+            "name": "Extra Mile",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 4,
-            "name" : "Helpfulness",
-            "excellent" : "",
+            "id": 4,
+            "name": "Helpfulness",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 5,
-            "name" : "Innovation",
-            "excellent" : "",
+            "id": 5,
+            "name": "Innovation",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 6,
-            "name" : "Leadership",
-            "excellent" : "",
+            "id": 6,
+            "name": "Leadership",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 7,
-            "name" : "Carefulness",
-            "excellent" : "",
+            "id": 7,
+            "name": "Carefulness",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 8,
-            "name" : "Crisis management",
-            "excellent" : "",
+            "id": 8,
+            "name": "Crisis management",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 9,
-            "name" : "Cross Team Collaboration",
-            "excellent" : "",
+            "id": 9,
+            "name": "Cross Team Collaboration",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 12,
-            "name" : "Career path",
-            "excellent" : "",
+            "id": 12,
+            "name": "Career path",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 13,
-            "name" : "Guidance ability",
-            "excellent" : "",
+            "id": 13,
+            "name": "Guidance ability",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 14,
-            "name" : "Absorbing ability",
-            "excellent" : "",
+            "id": 14,
+            "name": "Absorbing ability",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 15,
-            "name" : "Independent & Accountability",
-            "excellent" : "",
+            "id": 15,
+            "name": "Independent & Accountability",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 16,
-            "name" : "Effective & Efficient Communication",
-            "excellent" : "",
+            "id": 16,
+            "name": "Effective & Efficient Communication",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 17,
-            "name" : "Analytical skills",
-            "excellent" : "",
+            "id": 17,
+            "name": "Analytical skills",
+            "excellent": "",
             "above": "",
             "average": ""
         },
         {
-            "id" : 18,
-            "name" : "Courage",
-            "excellent" : "",
+            "id": 18,
+            "name": "Courage",
+            "excellent": "",
             "above": "",
             "average": ""
         }
     ],
-    "questions" : [
+    "questions": [
         {
-            "id" : 1,
-            "text" : "我有想到一些關於工作上的Good Ideas",
-            "icon" : "./share_idea_banner.png",
+            "id": 1,
+            "text": "我有想到一些關於工作上的Good Ideas",
+            "icon": "./share_idea_banner.png",
             "yes": "Yes",
             "no": "No",
             "ability": "Idea Sharing",
             "weight": 1
         },
         {
-            "id" : 2,
-            "text" : "I used to share my good ideas/thoughts.",
-            "icon" : "./share_idea_banner.png",
+            "id": 2,
+            "text": "I used to share my good ideas/thoughts.",
+            "icon": "./share_idea_banner.png",
             "yes": "Many Times",
             "no": "Not often",
             "ability": "Idea Sharing",
             "weight": 2
         },
         {
-            "id" : 3,
-            "text" : "I able to share my good ideas to whole team.",
-            "icon" : "./share_idea_banner.png",
+            "id": 3,
+            "text": "I able to share my good ideas to whole team.",
+            "icon": "./share_idea_banner.png",
             "yes": "Yes",
             "no": "No",
             "ability": "Idea Sharing",
             "weight": 3
         },
         {
-            "id" : 4,
-            "text" : "I used to share my good ideas and the whole team buys in.",
-            "icon" : "./share_idea_banner.png",
+            "id": 4,
+            "text": "I used to share my good ideas and the whole team buys in.",
+            "icon": "./share_idea_banner.png",
             "yes": "Yes",
             "no": "No",
             "ability": "Idea Sharing",
             "weight": 4
         },
         {
-            "id" : 5,
-            "text" : "How many side project do you have?",
-            "icon" : "./3fsSPDd693xmq6iiX5aj6c-320-80.jpg",
+            "id": 5,
+            "text": "How many side project do you have?",
+            "icon": "./3fsSPDd693xmq6iiX5aj6c-320-80.jpg",
             "yes": "More than one",
             "no": "Zero",
             "ability": "Side project",
             "weight": 5
         },
         {
-            "id" : 6,
-            "text" : "Does any side project become part of the products?",
-            "icon" : "./3fsSPDd693xmq6iiX5aj6c-320-80.jpg",
+            "id": 6,
+            "text": "Does any side project become part of the products?",
+            "icon": "./3fsSPDd693xmq6iiX5aj6c-320-80.jpg",
             "yes": "Yes",
             "no": "No",
             "ability": "Side project",
+            "weight": 5
+        },
+        {
+            "id": 7,
+            "text": "A team player?",
+            "icon": "./teamwork.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Team Work",
+            "weight": 2
+        },
+        {
+            "id": 8,
+            "text": "Active trying/learning to be a better team player?",
+            "icon": "./teamwork.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Team Work",
+            "weight": 3
+        },
+        {
+            "id": 9,
+            "text": "Seek ways to improve team dynamic. Help team grow. A team coordinator.",
+            "icon": "./teamwork.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Team Work",
+            "weight": 5
+        },
+        {
+            "id": 10,
+            "text": "Just do you job?",
+            "icon": "./passion.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Passion about Quality of Work",
+            "weight": 2
+        },
+        {
+            "id": 11,
+            "text": "Clear code. Well maintained design document.",
+            "icon": "./passion.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Passion about Quality of Work",
+            "weight": 3
+        },
+        {
+            "id": 12,
+            "text": "Not only having good quality of work, can spot areas that can be improved and plan for incremental improvement. 很有心!",
+            "icon": "./passion.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Passion about Quality of Work",
+            "weight": 5
+        },
+        {
+            "id": 13,
+            "text": "Taking on extra mile when asked.",
+            "icon": "./extra-mile.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Extra Mile",
+            "weight": 2
+        },
+        {
+            "id": 14,
+            "text": "Proactively taking on extra mile.",
+            "icon": "./extra-mile.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Extra Mile",
+            "weight": 3
+        },
+        {
+            "id": 15,
+            "text": "Not only proactively taking on extra mile, but also seeking way to make things more efficient.",
+            "icon": "./extra-mile.jpg",
+            "yes": "Yes",
+            "no": "No",
+            "ability": "Extra Mile",
             "weight": 5
         }
     ]

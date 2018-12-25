@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         allowedDirections: [swing.Direction.LEFT, swing.Direction.RIGHT],
         minThrowOutDistance: 300,
         maxThrowOutDistance: 350,
-        isThrowOut: function(xOffset, yOffset, element, throwOutConfidence) {
+        isThrowOut: function (xOffset, yOffset, element, throwOutConfidence) {
             return throwOutConfidence > 0.3;
         }
     });
@@ -12,26 +12,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var abilities, questions;
 
-    fetch('https://my-json-server.typicode.com/george7551858/app2goodqualities/abilities')
-        .then(function(response) {
+    fetch('http://localhost:3000/abilities')
+        .then(function (response) {
             return response.json();
         })
-        .then(function(json) {
+        .then(function (json) {
             abilities = json;
+            var fragment = document.createDocumentFragment();
             abilities.forEach(function (ability) {
                 var progress = document.createElement('progress');
                 progress.value = 0;
                 progress.max = 10;
                 progress.dataset.name = ability.name;
-                document.getElementById('score').appendChild(progress); 
-            })
+                var label = document.createElement('div');
+                label.innerText = ability.name;
+                label.appendChild(progress);
+                fragment.appendChild(label);
+            });
+            document.getElementById('score').appendChild(fragment);
         });
 
-    fetch('https://my-json-server.typicode.com/george7551858/app2goodqualities/questions')
-        .then(function(response) {
+    fetch('http://localhost:3000/questions')
+        .then(function (response) {
             return response.json();
         })
-        .then(function(json) {
+        .then(function (json) {
             questions = json.reverse();
             questions.forEach(function (question) {
                 var card = document.createElement('li');
@@ -44,11 +49,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if (question.icon) {
                     var icon = document.createElement('img');
-                    icon.src = './img/'+question.icon;
-                    card.appendChild(icon); 
+                    icon.src = './img/' + question.icon;
+                    card.appendChild(icon);
                 }
 
-                document.getElementById('stack').appendChild(card); 
+                document.getElementById('stack').appendChild(card);
             });
 
             cards = [].slice.call(document.querySelectorAll('#stack li'));
@@ -69,16 +74,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     stack.on('dragmove', _.throttle(function (e) {
         console.log(e.target.innerText || e.target.textContent, 'has been dragmove of the stack to the', e.throwDirection, 'direction.');
-    
+
         e.target.dataset.direction = getSymbolDescripttion(e.throwDirection);
     }, 200, {
-      'leading': true,
-      'trailing': false
+        'leading': true,
+        'trailing': false
     }));
 
     // stack.on('dragmove', function (e) {
     //     console.log(e.target.innerText || e.target.textContent, 'has been dragmove of the stack to the', e.throwDirection, 'direction.');
-    
+
     //     e.target.dataset.direction = getSymbolDescripttion(e.throwDirection);
     // });
 
@@ -115,30 +120,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (e.target.dataset.location == 'RIGHT') {
             countTargetAbility(e.target.dataset.ability, -1 * e.target.dataset.weight);
-        }        
+        }
         setupByLastCard();
 
         e.target.dataset.location = 'CENTER';
     });
-    
+
 
     var getSymbolDescripttion = function (sym) {
         return String(sym).slice(7, -1) || null;
     };
 
-    var getLastCard = function() {
+    var getLastCard = function () {
         var cards = document.querySelectorAll('#stack li.in-deck');
-        return cards[cards.length-1];
+        return cards[cards.length - 1];
     };
 
-    var setupByLastCard = function() {
+    var setupByLastCard = function () {
         var lastCard = getLastCard();
         document.querySelector('#question p').innerHTML = lastCard ? lastCard.dataset.text : '';
         document.querySelector('#ability').innerHTML = lastCard ? lastCard.dataset.ability : '';
     };
 
-    var countTargetAbility = function(ability, number) {
-        var ability = document.querySelector('progress[data-name="'+ ability +'"]');
-        ability.value += parseInt(number, 10);
+    var countTargetAbility = function (ability, number) {
+        var progress = document.querySelector('progress[data-name="' + ability + '"]');
+        progress.value += parseInt(number, 10);
     };
 });
