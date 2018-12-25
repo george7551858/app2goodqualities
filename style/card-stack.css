@@ -126,23 +126,21 @@ h1 {
 #score {
     width: 500px;
     margin: 0 auto;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #score progress {
-    display: block;
-    height: 18px;
-    margin: 10px 0;
-    margin-left: 250px;
+    float: right;
 }
 
-#score progress:before {
+/* #score progress:before {
     content: attr(data-name);
     width: 250px;
     font-size: 12px;
     margin-left: -260px;
     display: block;
     text-align: right;
-}
+} */
 
 #viewport li.clubs, #viewport li.spades {
     color: #373737;
