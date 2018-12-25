@@ -11,6 +11,6 @@
   "scripts": {
     "start": "webpack-dev-server --content-base dist/",
     "build": "webpack",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy": "git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages"
   }
 }
