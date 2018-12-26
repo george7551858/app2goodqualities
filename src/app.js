@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var cards = [];
 
     var abilities, questions;
+    var db_host = new URL(window.location.href).searchParams.get('db_host');
 
-    fetch('https://my-json-server.typicode.com/evilvioletwu/app2goodqualities/abilities')
+    fetch('http://' + db_host + '/abilities')
         .then(function (response) {
             return response.json();
         })
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('score').appendChild(fragment);
         });
 
-    fetch('https://my-json-server.typicode.com/evilvioletwu/app2goodqualities/questions')
+    fetch('http://' + db_host + '/questions')
         .then(function (response) {
             return response.json();
         })
@@ -77,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         e.target.dataset.direction = getSymbolDescripttion(e.throwDirection);
     }, 200, {
-        'leading': true,
-        'trailing': false
-    }));
+            'leading': true,
+            'trailing': false
+        }));
 
     // stack.on('dragmove', function (e) {
     //     console.log(e.target.innerText || e.target.textContent, 'has been dragmove of the stack to the', e.throwDirection, 'direction.');
